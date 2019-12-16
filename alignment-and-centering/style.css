@@ -30,18 +30,22 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 /* We start writing out flexbox here. The above is just page setup */
 .container {
-  display:flex;
+  align-items: flex-start;
   border:10px solid mistyrose;
+  display:flex;
   height:100vh;
-  align-items:flex-start;
 }
 
 .box {
-  width:33.333%;
+  width: 10%;
 }
 
 .box2 {
   padding-bottom: 200px;
+}
+
+.box5 {
+  align-self: center;
 }
 
 .box6 {
@@ -50,5 +54,5 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 .box9 {
   padding-bottom: 50px;
-  align-self:stretch;
+  align-self: flex-end;
 }
