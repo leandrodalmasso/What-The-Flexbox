@@ -34,11 +34,16 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 }
 
 .box1 {
-  flex:10 5 400px;
+  /* flex-basis: 600px;
+  flex-grow: 1;
+  flex-shrink: 2; */
+
+  flex: 1 2 600px;
 }
 
 .box2 {
-  flex:1 1 400px;
+  /* flex-basis: 600px;
+  flex-grow: 1;
+  flex-shrink: 2; */
+  flex: 2 1 600px;
 }
-
-
