@@ -64,13 +64,76 @@ section, footer {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+}
+
+.flex-nav li {
+  flex: 3;
+}
+
+.flex-nav .social {
+  flex: 1;
 }
 
 @media all and (max-width:1000px) {
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
 
+  .flex-nav li {
+    flex: 1 1 50%;
+  }
 }
 
 
 @media all and (max-width:500px) {
-  
+  .flex-nav li {
+    flex-basis: 100%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* nav menu */
+  .toggleNav {
+    display: block;
+  }
+
+  .flex-nav ul {
+    display: none;
+  }
+
+  .flex-nav ul.open {
+    display: flex;
+  }
+
+  /* ordering */
+  .flex-nav {
+    order: -4;
+  }
+
+  .top {
+    order: -3;
+  }
+
+  .details {
+    order: -2;
+  }
+
+  .signup {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .signup > .emailadress {
+    margin-top: 5px;
+  }
+
+  .signup > .signmeup {
+    margin-top: 5px;
+  }
 }
+ 
