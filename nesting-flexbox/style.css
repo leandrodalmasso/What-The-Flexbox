@@ -39,33 +39,30 @@ a:hover {
   list-style: none;
   margin: 0;
   padding: 0;
-  display:flex;
+  display: flex;
 }
 
-/* our first flex item */
 .slider-nav li {
-  flex:2; /* THis is flex item -ish */
-  text-align: center;
-  display:flex; /* This is flex container -ish */
+  flex: 2;
+  display: flex;
 }
 
 .slider-nav .arrow {
-  flex:1;
+  flex: 1;
+}
+
+.slider-nav a {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-nav span {
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 .arrow a {
   font-size: 30px;
-}
-
-.slider-nav a {
-  flex-basis:100%;
-  display:flex;
-  align-items:center;
-  /*We want to stretch as well and center*/
-}
-
-/* This is the flex item */
-.slider-nav span {
-  display: block;
-  width: 100%;
 }
