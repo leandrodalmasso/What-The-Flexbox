@@ -56,7 +56,6 @@ a.button {
 
 
 .icon-bar a {
-  flex:1;
   text-align: center;
   padding:1.5rem;
   border-left:1px solid rgba(0,0,0,0.1);
@@ -102,3 +101,43 @@ a.button {
 /*
   Overall Layout
 */
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-wrap > * {
+  flex: 1 1 auto;
+}
+
+/*
+  Header
+*/
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*
+  Content
+*/
+
+.content {
+  overflow-y: scroll;
+  --webkit-overflow-scrolling: touch;
+}
+
+/*
+  Icon bar
+*/
+
+.icon-bar {
+  display: flex;
+}
+
+.icon-bar a {
+  flex: 1;
+}
